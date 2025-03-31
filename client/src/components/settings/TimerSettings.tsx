@@ -60,7 +60,7 @@ export default function TimerSettings(props) {
               label={<div>Show timer when I&apos;m helping a student</div>}
             />
           </Grid>
-          {queueData.allowShowOthersTimer && (
+          {queueData.allowShowOthersTimer && userData.isAdmin && (
             <Grid className="d-flex" item xs={12}>
               <FormControlLabel
                 control={
